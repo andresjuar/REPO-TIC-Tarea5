@@ -43,3 +43,20 @@ h2 {
     font-size: 1.6rem;
   }
 }
+
+
+.beneficios {
+    text-align: center;
+}
+
+.beneficios-subtitulo {
+    color: var(--color-suave);
+    margin-bottom: 2.5rem;
+    font-size: 1.1rem;
+}
+
+.beneficios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
