@@ -1,12 +1,12 @@
 :root {
-  --color-primario: #2563eb;
-  --color-primario-oscuro: #1d4ed8;
-  --color-texto: #1f2937;
-  --color-suave: #6b7280;
-  --color-fondo: #f9fafb;
+  --color-primario: #059669;
+  --color-primario-oscuro: #047857;
+  --color-texto: #0f172a;
+  --color-suave: #64748b;
+  --color-fondo: #f0fdf4;
   --color-blanco: #ffffff;
   --sombra: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
-  --sombra-hover: 0 10px 25px rgba(0, 0, 0, 0.1);
+  --sombra-hover: 0 10px 25px rgba(5, 150, 105, 0.18);
   --radio: 12px;
 }
 * {
@@ -43,3 +43,22 @@ h2 {
     font-size: 1.6rem;
   }
 }
+
+.section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+ 
+.short-section {
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 2rem;
+}
+ 
