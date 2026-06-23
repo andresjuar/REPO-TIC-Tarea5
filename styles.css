@@ -1,12 +1,12 @@
 :root {
-  --color-primario: #2563eb;
-  --color-primario-oscuro: #1d4ed8;
-  --color-texto: #1f2937;
-  --color-suave: #6b7280;
-  --color-fondo: #f9fafb;
+  --color-primario: #059669;
+  --color-primario-oscuro: #047857;
+  --color-texto: #0f172a;
+  --color-suave: #64748b;
+  --color-fondo: #f0fdf4;
   --color-blanco: #ffffff;
   --sombra: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
-  --sombra-hover: 0 10px 25px rgba(0, 0, 0, 0.1);
+  --sombra-hover: 0 10px 25px rgba(5, 150, 105, 0.18);
   --radio: 12px;
 }
 * {
@@ -43,7 +43,6 @@ h2 {
     font-size: 1.6rem;
   }
 }
-
 
 header {
   position: sticky;
@@ -89,6 +88,26 @@ nav a:hover {
   nav ul {
     gap: 1rem;
   }
+}
+
+.section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+
+.short-section {
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 2rem;
+}
+
 .beneficios {
     text-align: center;
 }
@@ -104,6 +123,7 @@ nav a:hover {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 1.5rem;
 }
+
 .beneficio-card {
     background: var(--color-blanco);
     border-radius: var(--radio);
@@ -133,19 +153,18 @@ nav a:hover {
     font-size: 0.95rem;
 }
 
-footer p {
-  margin: 0.25rem 0;
-  font-size: 0.95rem;
-}
-
-/* Estilos para el footer */
 footer {
   background: var(--color-texto);
   color: #e5e7eb;
   text-align: center;
   padding: 2rem 1rem;
-}}
-/* Estilos para la sección principal */
+}
+
+footer p {
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+}
+
 .principal {
   text-align: center;
   padding: 3rem 1rem;
@@ -158,7 +177,6 @@ footer {
   margin: 0 auto;
 }
 
-/* Estilos para la hero section */
 .hero {
   background: linear-gradient(135deg, var(--color-primario) 0%, var(--color-primario-oscuro) 100%);
   color: var(--color-blanco);
@@ -207,14 +225,12 @@ footer {
 
 @media (max-width: 768px) {
   .hero {
-   padding: 4rem 1.5rem;
+    padding: 4rem 1.5rem;
   }
-
   .hero h1 {
-   font-size: 2rem;
+    font-size: 2rem;
   }
-
   .hero .descripcion {
-   font-size: 1rem;
+    font-size: 1rem;
   }
 }
