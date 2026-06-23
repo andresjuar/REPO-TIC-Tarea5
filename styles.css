@@ -43,3 +43,16 @@ h2 {
     font-size: 1.6rem;
   }
 }
+
+/* Estilos para el footer */
+footer {
+  background: var(--color-texto);
+  color: #e5e7eb;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+footer p {
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+}
