@@ -1,0 +1,146 @@
+:root {
+  --color-primario: #2563eb;
+  --color-primario-oscuro: #1d4ed8;
+  --color-texto: #1f2937;
+  --color-suave: #6b7280;
+  --color-fondo: #f9fafb;
+  --color-blanco: #ffffff;
+  --sombra: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+  --radio: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: var(--color-texto);
+  background: var(--color-fondo);
+  line-height: 1.6;
+}
+
+/* Encabezado y navegación */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--color-blanco);
+  box-shadow: var(--sombra);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1.25rem 2rem;
+}
+
+header h1 {
+  font-size: 1.4rem;
+  color: var(--color-primario);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.75rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--color-texto);
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: var(--color-primario);
+}
+
+/* Contenido principal */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.principal {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.principal p {
+  color: var(--color-suave);
+  font-size: 1.15rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Beneficios */
+.beneficios-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.beneficio {
+  background: var(--color-blanco);
+  padding: 2rem;
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.beneficio:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.beneficio h3 {
+  color: var(--color-primario);
+  margin-bottom: 0.75rem;
+}
+
+.beneficio p {
+  color: var(--color-suave);
+}
+
+/* Pie de página */
+footer {
+  background: var(--color-texto);
+  color: #e5e7eb;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+footer p {
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav ul {
+    gap: 1rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+}
